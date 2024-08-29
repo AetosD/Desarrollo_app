@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>page404</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-img src="./../../assets/img/R.jpeg"></ion-img>
+  </div>
+  <div>
+    <ion-card #card>
+      <ion-card-content>Card</ion-card-content>
+    </ion-card>
+    <ion-button (click)="play()">Play</ion-button>
+    <ion-button (click)="pause()">Pause</ion-button>
+    <ion-button (click)="stop()">Stop</ion-button>
+  </div>
+</ion-content>

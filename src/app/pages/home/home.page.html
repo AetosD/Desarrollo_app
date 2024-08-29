@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bienvenido {{usuario}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Agenda 2024</ion-card-title>
+        <ion-card-subtitle>Datos de mis contactos</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non et recusandae eum, deserunt sunt dolorem iste repellendus nobis alias necessitatibus esse nemo? Facere laudantium aliquid quas accusantium pariatur. Deleniti, eaque!
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div style="padding: 15px;">
+    <ion-button expand="block" routerLink="/agregar">Agregar</ion-button>
+    <ion-button expand="block" routerLink="/listar">Listar</ion-button>
+  </div>
+  <mat-slide-toggle>Toggle me!</mat-slide-toggle>
+
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</ion-content>
